@@ -1,0 +1,1 @@
+java -jar build/libs/Spring-Basics-0.0.1-SNAPSHOT.jar --spring.config.location=classpath:/application-dev.properties

@@ -13,6 +13,6 @@ public class BasicsController{
 	
 	@RequestMapping("/")
 	public String sayHello(){
-		return "Hello from SpringBoot: port="+port;
+		return String.valueOf(port);
 	}
 }

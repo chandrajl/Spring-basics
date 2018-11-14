@@ -12,7 +12,7 @@ public class BasicsController{
 	int port;
 	
 	@RequestMapping("/")
-	public String sayHello(){
-		return "Hello from SpringBoot: port="+port;
+	public int sayHello(){
+		return port;
 	}
 }

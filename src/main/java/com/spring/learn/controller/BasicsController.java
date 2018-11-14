@@ -12,7 +12,7 @@ public class BasicsController{
 	int port;
 	
 	@RequestMapping("/")
-	public int sayHello(){
-		return port;
+	public String sayHello(){
+		return String.valueOf(port);
 	}
 }

@@ -1,0 +1,25 @@
+1. Health  and status: cf app BorrowerH2OModelService
+2. cf scale BorrowerH2OModelService -m 1G
+	 -f==> Force restart of app without prompt
+	 -i==> Number of instances
+	 -k==> Disk limit (e.g. 256M, 1024M, 1G)
+	 -m==> Memory limit (e.g. 256M, 1024M, 1G)
+3. apps - List all apps in the target space
+	==> cf apps
+4. events - Show recent app events
+	==> cf events BorrowerH2OModelService
+5. Services
+	 ==> cf marketplace
+	 ==> cf services
+	 ==> cf marketplace -s appdynamics
+	 create Service ==>cf create-service SERVICE PLAN SERVICE_INSTANCE [-b BROKER] [-c PARAMETERS_AS_JSON] [-t TAGS]
+		==> cf create-service AppDynamics EntArchPlan appdynamics
+	 update Service ==> cf update-service SERVICE_INSTANCE [-p NEW_PLAN] [-c PARAMETERS_AS_JSON] [-t TAGS]
+		==> cf update-service mydb -p gold
+	 delete service==> cf delete-service SERVICE_INSTANCE [-f]
+		-f ==> Force deletion without confirmation
+	 rename service ==> cf rename-service SERVICE_INSTANCE NEW_SERVICE_INSTANCE
+6.Spaces
+	==> cf spaces
+	==>cf space {name of space}
+	
